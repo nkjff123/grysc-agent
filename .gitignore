@@ -1,0 +1,171 @@
+# ==========================================
+# 非前后端目录与文件 (Non-Frontend & Non-Backend)
+# ==========================================
+# 原始古籍与抓取语料
+/事林广记/
+/*.txt
+!requirements.txt
+!/back/requirements.txt
+
+# 爬虫与数据下载脚本
+download_shilin_guangji.py
+download_*.py
+
+# 离线语料流水线、评测集与校验脚本
+/corpus/
+/eval/
+/scripts/
+/tests/
+
+# 竞赛材料、答辩PPT与演示文档
+《古人也搜索》竞赛答辩PPT详细大纲_目录分阶段版.md
+*答辩*
+*PPT*
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.pdf
+*.xls
+*.xlsx
+
+# 项目规划与 AI 协作文档
+/memory-bank/
+CLAUDE.md
+
+
+# ==========================================
+# 前端工程 (Front-end: Node / React / Vite / TS)
+# ==========================================
+node_modules/
+.pnpm-store/
+.vite/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.turbo/
+.parcel-cache/
+
+# 前端日志与包管理器临时文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# ==========================================
+# 后端工程 (Back-end: Python / FastAPI / LangGraph)
+# ==========================================
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 构建与打包分发
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+/lib/
+/lib64/
+/back/lib/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 数据库与本地持久化存储 (SQLite / 向量库 / 索引)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+chroma_db/
+chroma/
+.chroma/
+faiss_index/
+/data/
+/back/data/
+/storage/
+/back/storage/
+
+# 模型权重与本地缓存
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.h5
+*.ckpt
+/models/
+/back/models/
+/checkpoints/
+/back/checkpoints/
+.cache/
+
+# 测试与覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+
+# ==========================================
+# 环境配置与密钥 (Environment & Secrets)
+# ==========================================
+.env
+.env.*
+!.env.example
+
+
+# ==========================================
+# 编辑器与系统文件 (IDE & OS)
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统临时文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 通用日志与临时目录
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+*.temp
